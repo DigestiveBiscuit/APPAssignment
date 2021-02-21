@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Users</title>
+    <meta name="description" content="APP Web Task 5">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="w3-container w3-dark-grey w3-mobile">
+        <header>
+            <h1 style="font-size: 40px;">APP Single Page App</h1>
+        </header>
+    </div>
+    <div class="w3-row-padding">
+        <div class='w3-container w3-third w3-margin'>
+            <p></p>
+        </div>
+        <section id="sectNewUser" class="w3-card w3-dark-grey w3-round w3-padding w3-margin-top w3-third">
+            <div>
+                <h2 style="color: white;">New User</h2>
+                <div>
+                    <!--   <label style="color: white;">UserID:</label>
+                    <input type="text" id="frmUserID" class="w3-input" style="width: 100%;"><br> -->
+                    <label style="color: white;">Email:</label>
+                    <input type="email" id="frmUserEmail" class="w3-input" style="width: 100%;">
+                    <br>
+                    <label style="color: white;">First Name:</label>
+                    <input type="text" id="frmUserFirstName" class="w3-input" style="width: 100%;">
+                    <br>
+                    <label style="color: white;">Last Name:</label>
+                    <input type="text" id="frmUserLastName" class="w3-input" style="width: 100%;">
+                    <br>
+                    <div class="w3-panel">
+                        <button id="btnNewUser">New User</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class='w3-container w3-third w3-margin'>
+            <p></p>
+        </div>
+    </div>
+    <section id="sectUser" class="w3-margin w3-card w3-third w3-dark-grey w3-round w3-padding">
+        <div>
+            <h2 class="w3-panel ">User</h2>
+            <div>
+                <label>User ID:</label>
+                <label id="userID"> </label>
+                <br>
+                <br>
+                <label>Email:</label>
+                <input type="email" id="userEmail" class="w3-input" value="" style="width: 100%;">
+                <br>
+                <label>First Name:</label>
+                <input type="text" id="userFirstName" class="w3-input" value="" style="width: 100%;">
+                <br>
+                <label>Last Name:</label>
+                <input type="text" id="userLastName" class="w3-input" value="" style="width: 100%;">
+                <div class="w3-panel">
+                    <button id="btnSaveUser">Save Changes</button>
+                    <button id="btnDeleteUser">Delete User</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sectUsers" class="w3-card w3-rest w3-margin w3-dark-grey w3-round ">
+        <div class="w3-container">
+            <div>
+                <h2 class="w3-padding" style="color: white;">Users</h2>
+                <div class="w3-padding" style="color: #ffffff;" id="divPageNumber"> Page <span id="pageNumber">1</span> of <span id="totalPages">2</span></div>
+                <div class="w3-panel">
+                    <button class="w3-button w3-white" id="btnPrevious">Previous</button>
+                    <button class="w3-button w3-white" id="btnNext">Next</button>
+                </div>
+                <table style="color: black;" id="tblUsers" class="w3-table-all">
+                    <tr id="tblUserHeader">
+                        <th>User ID</th>
+                        <th>Email</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Avatar</th>
+                    </tr>
+                    <tbody id="tblUsersBody"> </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

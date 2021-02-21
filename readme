@@ -1,0 +1,26 @@
+ # APP assignment 
+## app.py HTTP Methods and Functions:
+#### GET 
+- **get_users()** - Gets the user_list from database.py file, written as a nested dictionary, returns the user_list and the amount of pages that user list takes up.  
+
+- **get_single_user(user_id)** - Takes in user_id and compares that to the user_list, returns the selected user based on user_id.  
+#### POST 
+- **new_user()** - Parses variables from the request, checks that they fit the format, then appends them to the user_list in database.py. 
+> If a new user is added, the user ID increments based on the position in the user list. 
+#### PUT 
+- **edit_user(user_id)** - Takes in user_id, compares to the user_list, selects user and changes the variables of the selected user to the parsed variables from the request.
+#### DELETE
+- **delete_user(user_id)** - Takes in user_id and removes the user from the user list.
+> If a user is deleted, the user list reassigns IDs based on the position in the user list.
+
+##script.js Functions:
+
+- **getUsers(page)** - Sends off a request for the user_list data from back-end, parses the data through and then renders them to a table using **renderUsers()**.
+> Renders user list based on the page taken in.
+- **renderUsers(objUsers)** - Takes the data received from the request and displays is as a table in HTML. 
+> Room to apply styling classes/ids to each element in the rendered table.
+- **deleteUser()** - Deletes the selected user from the user_list.  
+
+- **createUser()** - Takes in data from the input boxes, appends it to a form and then sends the form data to the back-end.  
+
+- **saveUser()** - Takes in data from the input boxes, appends it to a form and then sends the form data to the back-end, overwrites old data.
